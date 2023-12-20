@@ -1,0 +1,25 @@
+<p appCustom>custom-dir works!</p>
+<table appCustom  class="table table-dark">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>gender</th>
+            <th>city</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let d of edata">
+            <td>{{d.Name }}</td>
+            <td>{{d.Age}}</td>
+            <td>{{d.Gender}}</td>
+            <td>{{d.City}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<div>
+    <input type="radio" name="color" (click)="getcol('blue')"> Blue
+    <input type="radio" name="color" (click)="getcol('green')"> Green
+    <input type="radio" name="color" (click)="getcol('pink')"> pink
+</div>
